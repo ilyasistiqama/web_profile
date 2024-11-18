@@ -49,7 +49,7 @@
 }
 
 #intro-content #redirect {
-    font-size: 24px;
+    font-size: 30px;
     /* color: #333; */
     color: #F0FFFF;
     display: inline-block;
@@ -58,7 +58,7 @@
 }
 
 #intro-content #redirect:hover {
-    transform: translateY(20px);
+    transform: translateY(15px);
     /* Mengarahkan teks ke bawah */
 }
 

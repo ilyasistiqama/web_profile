@@ -1,4 +1,9 @@
 #skill .container h2 {
     text-align: center;
     font-weight: lighter;
+    cursor: pointer;
+}
+
+#skill .container h2:hover {
+    font-weight: bolder;
 }

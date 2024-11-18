@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/section_intro.css">
     <link rel="stylesheet" href="styles/section_about_me.css">
+    <link rel="stylesheet" href="styles/section_skill.css">
     <link rel="stylesheet" href="styles/section_contact.css">
     <link rel="stylesheet" href="styles/section_experience.css">
     <link rel="stylesheet" href="styles/section_project.css">
@@ -101,6 +102,13 @@
                         praesentium possimus, dolores illo, laboriosam, eius voluptatibus officiis architecto quisquam
                         in! Quibusdam illum fugit cum. Eos, a consequatur.
                     </p>
+                    <p>
+                        <b>Click below to see my CURRICULUM VITAE :</b>
+                    </p>
+                    <button type="button" class="btn btn-danger btn-custom" style="background-color: #ff3131;"
+                        id="cv-btn">
+                        <b>CV</b>
+                    </button>
                 </div>
             </div>
         </div>
@@ -108,7 +116,7 @@
     <hr>
     <section id="skill">
         <div class="container">
-            <h2>Skills</h2>
+            <h2>MY SKILLS</h2>
         </div>
     </section>
     <section id="experience"></section>
@@ -161,6 +169,8 @@
     crossorigin="anonymous"></script>
 
 <script>
+    let embedIsLoad = false;
+
     $('.js-scroll-trigger').click(function () {
         $('.navbar-collapse').collapse('hide');
     });
@@ -169,6 +179,14 @@
         let year = new Date();
 
         $('#year').html("© " + year.getFullYear() + " Copyright: All rights reserved.");
+    });
+
+    $(document).on('click', '#cv-btn', function (e) {
+        e.preventDefault();
+
+        let path = 'https://drive.google.com/drive/folders/1ToUoWToqsUVoGj7CRcbUsMxIT5RhuYUC?usp=sharing';
+
+        window.open(path, '_blank');
     });
 
 </script>

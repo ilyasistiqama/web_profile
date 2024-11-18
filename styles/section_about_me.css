@@ -36,10 +36,11 @@
 #about-me #text h2 {
     text-align: center;
     font-weight: lighter;
+    cursor: pointer;
 }
 
 #about-me #text h2:hover {
-    font-weight: 600;
+    font-weight: bolder;
 }
 
 @media screen and (max-width:1000px) {
