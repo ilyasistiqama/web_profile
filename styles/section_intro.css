@@ -1,9 +1,6 @@
 #intro {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
 
     background-image: url('../assets/background.webp');
     background-repeat: no-repeat;
@@ -13,30 +10,39 @@
 }
 
 #intro-content {
+    display: inline-block;
     padding-top: 45px;
     padding-bottom: 35px;
-    margin-left: 35vh;
-    margin-right: 35vh;
+    padding-left: 25px;
+    padding-right: 25px;
+
     border: 1px;
     border-radius: 15px;
     box-shadow: 7px 7px 10px black;
+
     color: black;
     background-color: #F0FFFF;
+
+    /* Membuat transisi mulus */
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+#intro-content:hover {
+    /* zoom in */
+    transform: scale(1.1);
 }
 
 #intro-content #text-intro {
     display: inline-block;
     /* Membuat transisi mulus */
     transition: transform 0.3s ease, color 0.3s ease;
-    cursor: pointer;
 }
 
 #intro-content #text-intro:hover {
-    /* zoom in */
-    transform: scale(1.1);
 
     /* Mengarahkan teks ke atas */
-    /* transform: translateY(-25px); */
+    transform: translateY(-25px);
 }
 
 #intro-content #redirect {
