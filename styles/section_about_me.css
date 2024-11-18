@@ -1,0 +1,55 @@
+#about-me {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me .container #content {
+    display: flex;
+    align-items: flex-start;
+}
+
+#image-me {
+    max-height: 30%;
+    max-width: 30%;
+    border: solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px black;
+    /* Agar transformasi bekerja dengan baik */
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#image-me:hover {
+    /* zoom in */
+    transform: scale(1.1);
+}
+
+#about-me #text p {
+    text-align: justify;
+}
+
+@media screen and (max-width:1000px) {
+    #about-me {
+        display: block;
+    }
+
+    #about-me .container #content {
+        display: block;
+    }
+
+    #image-me {
+        max-height: 25%;
+        max-width: 25%;
+        display: block;
+        margin-top: 35px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #about-me #text h2 {
+        margin-top: 25px;
+    }
+}

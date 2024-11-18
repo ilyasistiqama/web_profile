@@ -1,0 +1,60 @@
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    background-image: url('../assets/background.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* filter: brightness(50%); */
+}
+
+#intro-content {
+    padding-top: 45px;
+    padding-bottom: 35px;
+    margin-left: 35vh;
+    margin-right: 35vh;
+    border: 1px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 10px black;
+    color: black;
+    background-color: #F0FFFF;
+}
+
+#intro-content #text-intro {
+    display: inline-block;
+    /* Membuat transisi mulus */
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+#intro-content #text-intro:hover {
+    /* zoom in */
+    transform: scale(1.1);
+
+    /* Mengarahkan teks ke atas */
+    /* transform: translateY(-25px); */
+}
+
+#intro-content #redirect {
+    font-size: 24px;
+    color: #333;
+    display: inline-block;
+    /* Agar transformasi bekerja dengan baik */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#intro-content #redirect:hover {
+    transform: translateY(20px);
+    /* Mengarahkan teks ke bawah */
+}
+
+@media screen and (max-width:1100px) {
+    #intro-content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

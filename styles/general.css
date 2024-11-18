@@ -1,0 +1,13 @@
+body {
+    background-color: #F0FFFF;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.navbar {
+    background-color: black;
+}
