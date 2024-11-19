@@ -20,8 +20,8 @@
     border-radius: 15px;
     box-shadow: 7px 7px 10px black;
 
-    color: #F0FFFF;
-    /* background-color: #F0FFFF; */
+    color: #ffffff;
+    /* background-color: #ffffff; */
     /* Fallback color */
     background-color: rgba(0, 0, 0, 0.6);
     /* Black w/opacity/see-through */
@@ -51,7 +51,7 @@
 #intro-content #redirect {
     font-size: 30px;
     /* color: #333; */
-    color: #F0FFFF;
+    color: #ffffff;
     display: inline-block;
     /* Agar transformasi bekerja dengan baik */
     transition: transform 0.3s ease, color 0.3s ease;

@@ -1,10 +1,11 @@
 #skill {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    background-color: #F6F6F6;
+    display: block;
+    padding: 20px 0 60px 0;
 }
 
 #skill .container h2 {
+    margin-top: 40px;
     text-align: center;
     font-weight: lighter;
     cursor: pointer;
@@ -16,4 +17,68 @@
 
 #skill .container h2:hover {
     font-weight: bolder;
+}
+
+#skill .container .box {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px black;
+}
+
+#skill .container #content {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 5%;
+    justify-content: center;
+    overflow: auto;
+    height: auto;
+    padding: 25px 5px;
+
+    background-color: #ffffff;
+}
+
+#skill .container #content .list-skill {
+    cursor: pointer;
+    display: block;
+    padding: 7px 0;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px black;
+    z-index: 0;
+    background-color: #F6F6F6;
+}
+
+#skill .container #content .list-skill:hover {
+    animation: wiggle 1s infinite;
+}
+
+#skill .container #content .list-skill .list-skill-body {
+    display: block;
+    text-align: center;
+}
+
+.icon-skill {
+    font-size: 40px;
+}
+
+.icon-skill-img {
+    padding: 11px 0;
+    max-width: 20%;
+    max-height: 20%;
+}
+
+@media screen and (max-width:1000px) {
+    #skill .container #content {
+        grid-template-columns: 45% 45%;
+        grid-gap: 5%;
+        z-index: -1;
+    }
+
+    .icon-skill-img {
+        padding: 13px 0;
+        max-width: 12%;
+        max-height: 12%;
+    }
 }

@@ -1,5 +1,5 @@
 body {
-    background-color: #F0FFFF;
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
 }
 
@@ -30,8 +30,27 @@ section {
     }
 }
 
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-150px);
+    }
+
+    60% {
+        transform: translateY(-75px);
+    }
+}
+
 #intro,
-#skill,
 #experience,
 #project {
     min-height: 100vh;
