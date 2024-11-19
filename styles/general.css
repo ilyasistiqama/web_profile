@@ -59,10 +59,20 @@ section {
 .btn-custom {
     box-shadow: 2px 2px 5px black;
     transition: transform 0.3s ease, color 0.3s ease;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 
 .btn-custom:hover {
     transform: scale(1.3);
-    border: 1px solid black;
+    border: 3px solid black;
+}
+
+.pre-section {
+    height: 35vh;
+    background-image: url('../assets/background-2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0% 80%;
+    filter: brightness(50%);
 }

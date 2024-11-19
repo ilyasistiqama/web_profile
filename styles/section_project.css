@@ -1,0 +1,9 @@
+#project {
+    background-color: #F6F6F6;
+    display: block;
+    padding: 20px 0 60px 0;
+}
+
+#project .container h2 {
+    text-align: center;
+}

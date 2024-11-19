@@ -5,14 +5,11 @@
 }
 
 #skill .container h2 {
-    margin-top: 40px;
+    margin-top: 10px;
+    margin-bottom: 25px;
     text-align: center;
     font-weight: lighter;
     cursor: pointer;
-}
-
-#skill .container p {
-    text-align: justify;
 }
 
 #skill .container h2:hover {
@@ -22,7 +19,7 @@
 #skill .container .box {
     background-color: #ffffff;
     padding: 15px;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 15px;
     box-shadow: 5px 5px 8px black;
 }
@@ -43,9 +40,9 @@
     cursor: pointer;
     display: block;
     padding: 7px 0;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 15px;
-    box-shadow: 5px 5px 8px black;
+    box-shadow: 4px 4px 6px black;
     z-index: 0;
     background-color: #F6F6F6;
 }

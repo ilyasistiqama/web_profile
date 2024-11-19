@@ -1,0 +1,9 @@
+#experience {
+    display: block;
+    padding: 20px 0 60px 0;
+}
+
+
+#experience .container h2 {
+    text-align: center;
+}
