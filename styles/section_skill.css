@@ -1,7 +1,17 @@
+#skill {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 #skill .container h2 {
     text-align: center;
     font-weight: lighter;
     cursor: pointer;
+}
+
+#skill .container p {
+    text-align: justify;
 }
 
 #skill .container h2:hover {
