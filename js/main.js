@@ -23,3 +23,23 @@ $(document).on('click', '#cv-btn', function (e) {
 
     window.open(path, '_blank');
 });
+
+// Ambil tombol
+const backToTopButton = document.getElementById("backToTop");
+
+// Tampilkan tombol jika halaman di-scroll ke bawah
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 120) { // Jika scroll lebih dari 120px
+        backToTopButton.style.display = "flex";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+});
+
+// Scroll ke atas ketika tombol diklik
+backToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth", // Efek scroll halus
+    });
+});

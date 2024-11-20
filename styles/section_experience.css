@@ -33,9 +33,12 @@
     display: block;
     cursor: pointer;
     overflow: auto;
-    padding: 45px 40px 5px 40px;
+    padding: 45px 45px 5px 45px;
     z-index: 1;
     height: 85vh;
+    border: 3px solid black;
+    border-radius: 3px;
+    box-shadow: 4px 4px 6px black;
 }
 
 #experience .container #content #content-right .box {
