@@ -18,7 +18,7 @@
 #experience .container #content #content-left h2 {
     font-weight: lighter;
     cursor: pointer;
-    text-align: center;
+    text-align: left;
 }
 
 #experience .container #content #content-left h2:hover {
@@ -95,8 +95,6 @@
 #experience .container #content #content-right .box .box-body .box-department p {
     font-size: 12px;
 }
-
-
 
 
 @media screen and (max-width:1000px) {

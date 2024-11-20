@@ -1,9 +1,117 @@
 #project {
     background-color: #F6F6F6;
     display: block;
-    padding: 20px 0 60px 0;
+    padding: 40px 0 70px 0;
 }
 
 #project .container h2 {
     text-align: center;
+}
+
+#project .container #content {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 4%;
+}
+
+#project .container #content .box {
+    border: 3px solid black;
+    border-radius: 8px;
+    box-shadow: 4px 4px 6px black;
+
+    padding: 15px 15px;
+
+    /* Agar transformasi bekerja dengan baik */
+    transition: transform 0.3s ease, color 0.3s ease;
+
+    background-color: #ffffff;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    column-gap: 10%;
+    justify-content: space-between;
+    /* Memastikan box ada di bawah */
+}
+
+
+#project .container #content .box:hover {
+    transform: scale(1.1);
+}
+
+#project .container #content .box .box-carousel {
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+#project .container #content .box .box-explanation h2 {
+    text-align: left;
+}
+
+#project .container #content .box .box-explanation p {
+    text-align: left;
+}
+
+#project .container #content .box .box-explanation h2 {
+    margin-top: 15px;
+}
+
+#project .container #content .box .box-develop-by {
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
+
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 5%;
+    overflow: auto;
+    padding: 15px 15px;
+
+    max-height: 23vh;
+}
+
+.box-explanation {
+    flex-grow: 1;
+    /* Memastikan konten mengisi ruang sisa */
+}
+
+#project .container #content .box .box-develop-by .child-box {
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
+    padding: 5px 8px;
+    text-wrap: stable;
+}
+
+.img-project {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (max-width:1000px) {
+    #project .container #content .box .box-develop-by {
+        grid-template-columns: 100%;
+        max-height: 25vh;
+    }
+
+    #project .container #content {
+        margin-bottom: 25px;
+        display: block;
+        padding: 0 30px;
+    }
+
+    #project .container #content .box {
+        margin-top: 55px;
+    }
+
+    #project .container #content .box .box-develop-by .child-box {
+        text-align: center;
+    }
 }

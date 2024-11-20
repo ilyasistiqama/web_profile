@@ -7,7 +7,7 @@ $(document).ready(() => {
 
     setTimeout(function () {
         $('body').addClass('loaded');
-    }, 3000);
+    }, 4000);
 });
 
 
@@ -42,4 +42,27 @@ backToTopButton.addEventListener("click", () => {
         top: 0,
         behavior: "smooth", // Efek scroll halus
     });
+});
+
+// Get elements
+const overlay = document.getElementById('overlay');
+const closeBtn = document.getElementById('close-btn');
+const zoomedImage = document.getElementById('zoomed-image');
+
+$(document).on('click', '.thumbnail', function () {
+
+    zoomedImage.src = $(this).attr('src'); // Set zoomed image source
+    overlay.classList.add('active');
+})
+
+// Hide overlay when close button is clicked
+closeBtn.addEventListener('click', () => {
+    overlay.classList.remove('active');
+});
+
+// Hide overlay when clicking outside the image
+overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+        overlay.classList.remove('active');
+    }
 });
