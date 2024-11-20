@@ -1,7 +1,8 @@
 #experience {
+    min-height: 100%;
     display: block;
     padding: 60px 0 60px 0;
-    height: 100vh;
+    height: auto;
 }
 
 #experience .container #content {
@@ -97,15 +98,29 @@
 }
 
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1100px) {
+    #experience .container #content {
+        display: block;
+        z-index: 0;
+    }
+
     #experience .container #content #content-right {
         display: block;
         cursor: pointer;
         overflow: auto;
-        padding: 70px 25px 5px 25px;
+        padding: 25px 15px 5px 15px;
+        height: 100%;
     }
 
     #experience .container #content #content-right .box {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        /* Agar transformasi bekerja dengan baik */
+        transition: none;
+        padding: 10px 10px;
+    }
+
+    #experience .container #content #content-right .box:hover {
+        /* zoom in */
+        transform: none;
     }
 }

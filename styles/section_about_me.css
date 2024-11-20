@@ -44,6 +44,18 @@
     font-weight: bolder;
 }
 
+.btn-custom {
+    padding: 10px 15px;
+    box-shadow: 2px 2px 5px black;
+    transition: transform 0.3s ease, color 0.3s ease;
+    border: 3px solid black;
+}
+
+.btn-custom:hover {
+    transform: scale(1.3);
+    border: 3px solid black;
+}
+
 @media screen and (max-width:1000px) {
     #about-me {
         display: block;
@@ -59,9 +71,24 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+
+        transition: none;
+    }
+
+    #image-me:hover {
+        /* zoom in */
+        transform: none;
     }
 
     #about-me #text h2 {
         margin-top: 25px;
+    }
+
+    .btn-custom {
+        transition: none;
+    }
+
+    .btn-custom:hover {
+        transform: none;
     }
 }

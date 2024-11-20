@@ -7,14 +7,13 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: 50% 25%;
+
+    height: 100vh;
 }
 
 #intro-content {
     display: inline-block;
-    padding-top: 45px;
-    padding-bottom: 35px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 45px 25px 45px 25px;
 
     border: 1px;
     border-radius: 15px;
@@ -64,7 +63,18 @@
 
 @media screen and (max-width:1100px) {
     #intro-content {
-        margin-left: 0;
-        margin-right: 0;
+        padding: 45px 10px 45px 10px;
+        transition: none;
+    }
+
+    #intro-content #text-intro:hover {
+
+        /* Mengarahkan teks ke atas */
+        transform: translateY(-15px);
+    }
+
+    #intro-content:hover {
+        /* zoom in */
+        transform: none;
     }
 }

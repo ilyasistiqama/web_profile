@@ -2,6 +2,7 @@
     background-color: #F6F6F6;
     display: block;
     padding: 40px 0 70px 0;
+    height: auto;
 }
 
 #project .container h2 {
@@ -64,6 +65,7 @@
 }
 
 #project .container #content .box .box-develop-by {
+    background-color: #F6F6F6;
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 2px 2px 3px black;
@@ -83,6 +85,7 @@
 }
 
 #project .container #content .box .box-develop-by .child-box {
+    background-color: #ffffff;
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 2px 2px 3px black;
@@ -102,13 +105,18 @@
     }
 
     #project .container #content {
-        margin-bottom: 25px;
+        margin-bottom: 0;
         display: block;
-        padding: 0 30px;
+        padding: 0 3px;
     }
 
     #project .container #content .box {
-        margin-top: 55px;
+        margin-top: 25px;
+        transition: none;
+    }
+
+    #project .container #content .box:hover {
+        transform: none;
     }
 
     #project .container #content .box .box-develop-by .child-box {
