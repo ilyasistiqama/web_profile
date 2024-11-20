@@ -7,7 +7,7 @@
 
 #about-me .container #content {
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     display: flex;
     align-items: flex-start;
 }

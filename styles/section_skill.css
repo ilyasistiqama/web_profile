@@ -5,8 +5,8 @@
 }
 
 #skill .container h2 {
-    margin-top: 10px;
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 45px;
     text-align: center;
     font-weight: lighter;
     cursor: pointer;
@@ -30,7 +30,7 @@
     grid-gap: 5%;
     justify-content: center;
     overflow: auto;
-    height: auto;
+    max-height: 65vh;
     padding: 25px 5px;
 
     background-color: #ffffff;
@@ -39,7 +39,7 @@
 #skill .container #content .list-skill {
     cursor: pointer;
     display: block;
-    padding: 7px 0;
+    padding: 5px 0;
     border: 3px solid black;
     border-radius: 15px;
     box-shadow: 4px 4px 6px black;
@@ -71,6 +71,7 @@
         grid-template-columns: 45% 45%;
         grid-gap: 5%;
         z-index: -1;
+        max-height: 67vh;
     }
 
     .icon-skill-img {
