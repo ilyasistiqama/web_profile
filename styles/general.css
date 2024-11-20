@@ -80,7 +80,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: 0% 80%;
+    background-position: 0% 50%;
 }
 
 #box-pre-section {
@@ -94,7 +94,7 @@ section {
     padding-right: 15px;
 
     color: #ffffff;
-    background-color: rgba(12, 12, 12, 0.6);
+    background-color: rgba(10, 10, 10, 0.6);
 
     text-align: center;
     font-style: italic;
