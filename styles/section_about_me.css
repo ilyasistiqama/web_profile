@@ -31,7 +31,8 @@
 }
 
 #about-me #text p {
-    text-align: justify;
+    margin-top: 25px;
+    text-align: left;
 }
 
 #about-me #text h2 {
@@ -45,6 +46,8 @@
 }
 
 .btn-custom {
+    display: block;
+    margin-top: 15px;
     padding: 10px 15px;
     box-shadow: 2px 2px 5px black;
     transition: transform 0.3s ease, color 0.3s ease;
